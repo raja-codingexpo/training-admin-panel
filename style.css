@@ -128,7 +128,7 @@ h6 {
     font-weight: normal;
     position: relative;
     padding: 0;
-    font-weight: normal;
+    font-weight: 600;
     line-height: normal;
     color: #1f1f1f;
     margin: 0
@@ -178,7 +178,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -580,7 +580,9 @@ a:focus {
 }
 
 .dropdown-item {
-    font-size: 13px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .column img {
@@ -779,14 +781,14 @@ a:focus {
     z-index: 1000;
     float: left;
     padding: 10px 6px;
-    margin: 0;
+    margin: 5px;
     font-size: 15px;
     color: #212529;
     text-align: left;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
-    border-radius: 0;
+    border-radius: 2px;
     width: 100%;
     box-shadow: -1px 1px 4px -2px rgba(0, 0, 0, 0.2);
     border: none;
@@ -856,7 +858,7 @@ span {
 #sidebar ul li a {
     padding: 15px 25px;
     display: block;
-    font-size: 14px;
+    font-size: 19px;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
 }
@@ -979,6 +981,7 @@ a[data-toggle="collapse"] {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -988,6 +991,7 @@ a[data-toggle="collapse"] {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1099,7 +1103,7 @@ a[data-toggle="collapse"] {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     border: 0px solid #e7e7e7;
     padding: 30px 35px;
-    background: #fff;
+    background: #F6F6F6;
     border-radius: 5px;
     min-height: 125px;
     display: flex;
@@ -1151,22 +1155,21 @@ a[data-toggle="collapse"] {
 }
 
 .counter_no p.total_no {
-    margin: 0;
-    font-size: 45px;
-    float: left;
-    width: 100%;
+    margin: 18px;
+    margin-bottom: -22px;
+    /* padding-left: 105px;
+    float: right;
+    width: 50%; */
     line-height: normal;
-    font-weight: 600;
-    color: #455a64;
-    text-align: right;
+    font-weight: 500;
     font-size: 24px;
-    font-weight: 400;
+    align-items: center;
 }
 
 .counter_no .head_couter {
     float: left;
     width: 100%;
-    color: #99abb4;
+    color: #000;
     font-weight: 300;
     margin: 0px 0 0 0;
     font-size: 20px;
@@ -1283,12 +1286,12 @@ a[data-toggle="collapse"] {
 }
 
 .mail-option .dropdown-menu li {
-    margin: 10px 0;
+    margin: 10px 5px;
 }
 
 .mail-option .dropdown-menu {
     padding: 4px 15px;
-    border-radius: 0;
+    border-radius: 2px;
     font-size: 14px;
     font-weight: 400;
     border: solid #ddd 1px;
@@ -1861,8 +1864,8 @@ button.main_bt {
 }
 
 .msg_list_main ul li span .name_user {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 600;
     color: #455a64;
     float: left;
     width: 100%;
@@ -2963,17 +2966,21 @@ ul.labels-category li p {
     .files .btn span {
         display: none;
     }
+
     .files .preview * {
         width: 40px;
     }
+
     .files .name * {
         display: inline-block;
         width: 80px;
         word-wrap: break-word;
     }
+
     .files .progress {
         width: 20px;
     }
+
     .files .delete {
         width: 60px;
     }
@@ -3399,4 +3406,21 @@ table.projects tr td:first-child {
 #map {
     height: 100%;
     min-height: 720px;
+}
+
+.form-select {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+    min-inline-size: -webkit-fill-available;
+}
+
+div h1 p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.sub{
+    width: auto;
+    display: flex;
 }
